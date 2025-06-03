@@ -1,55 +1,35 @@
-body {
-  margin: 0;
-  padding: 0 1rem;
+#app {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
 }
 
-h1 {
-  text-align: center;
+#container {
+  display: flex;
+  justify-content: space-between;
+  align-self: start;
 }
 
-main {
-  display: grid;
-  gap: 1rem;
+h2 {
+  padding-left: 50px;
 }
 
-@media (width >= 600px) {
-  main {
-    grid-template-columns: 1fr 1fr;
-  }
+#upcoming li{
+  padding-right: 30px;
+  border: 2px solid black;
 }
 
-.parties {
-  display: grid;
-  gap: 1ch;
-  padding-left: 0;
+li{
+  width: 300px;
   list-style-type: none;
+  padding: 10px;
+  margin: 5px;
+  font-size: 20px;
 }
 
-.parties a {
-  display: block;
-  border: 1px solid #ccc;
-  border-radius: 0.25rem;
-  padding: 1ch;
-  text-decoration: none;
-  color: black;
-}
-
-.parties a:hover {
-  background: #eee;
-  font-style: italic;
-}
-
-.parties li.selected {
-  font-weight: bold;
-  font-style: italic;
-}
-
-form {
-  display: grid;
-  gap: 1ch;
-  padding: 0 1rem;
-}
-
-label {
-  display: grid;
+section form {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin-left: 30px ;
 }
